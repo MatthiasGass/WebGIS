@@ -1,0 +1,15 @@
+body{
+	background-image: url("image_01.jpg");
+	text-align: center;
+	background-attachment: fixed;
+    }
+h1 {
+	font-family: sans-serif;
+	font-size: 36pt;
+	color: darkblue;
+	margin-top: 5pt;
+	margin-bottom: 20pt;
+	background-color: lightgreen;
+	}
+
+
