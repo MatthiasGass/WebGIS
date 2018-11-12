@@ -1,0 +1,36 @@
+
+body{
+	background-image: url("image_02.jpg");
+	background-size: cover; /* alt: cover */
+	text-align: center;
+	background-attachment: fixed;
+    }
+
+h1 {
+	font-family: sans-serif;
+	font-size: 36pt;
+	color: darkblue;
+	margin-top: 5pt;
+	margin-bottom: 20pt;
+	}
+
+
+input {
+
+}
+
+div.relative {
+    position: relative;
+		top: 50%;
+  	left: 50%;
+		/*https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page*/
+}
+
+
+div {
+	text-align: center;
+	width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+  width: -moz-max-content;    /* Firefox/Gecko */
+  width: -webkit-max-content; /* Chrome */
+	background-color: lightgrey;
+}
