@@ -1,15 +1,22 @@
 
-let x = 10;
-let y = 10;
 
 
-
-function Test(x,y){
-  var z = x*y
-  return z
+let geoJson = {
+  "type": "FeatureCollection",
+  features":[],
 };
 
-var Ergebnis = Test(x,y)
-console.log(Ergebnis)
+// funktion bei button klick{}
+let feature = {
+  "type" = "Feature",
+  "properties": {},
+  "geometry":{
+    "type":"Point",
+    "coordinates":[],
+  }
+};
 
-let Text1 = document.getElementById('1').value
+
+// funktionen zum hinzufügen
+
+// funktion bei button klick ENDE
