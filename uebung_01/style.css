@@ -1,7 +1,7 @@
 
 body{
 	background-image: url("image_02.jpg");
-	background-size: cover;
+	background-size: 100% auto;
 	text-align: center;
 	background-attachment: fixed;
     }
@@ -12,5 +12,17 @@ h1 {
 	color: darkblue;
 	margin-top: 5pt;
 	margin-bottom: 20pt;
-	background-color: lightgreen;
-	}
+		}
+
+.test{
+	border: 2px solid black;
+	padding: 25px;
+	background-color: lightgray;
+	background:rgba(255,255,255,0.2);
+	border-radius: 8px;
+	display: inline-block;
+
+		}
+div{
+
+}
