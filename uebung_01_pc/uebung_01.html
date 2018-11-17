@@ -5,7 +5,7 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<title>Übung 01</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" type="text/css" href="styles.css">
 	<script language="javascript" type="text/javascript" src="java.js"></script>
 </head>
 
@@ -14,6 +14,7 @@
 	<h1>Heading</h1>
 	<p>Paragraph</p>
 
+<p id="demo"></p>
 
 <div class="relative">
 	<form>
@@ -22,21 +23,22 @@
 		POI-Typ<br>
 		<input type="text" id="typ"><br>
 		Geogr. Breite (WGS84, EPSG:4326)<br>
-		<input type="text" id="gbreite"><br>
+		<input type="float" id="gb"><br>
 		Geogr. Länge (WGS84, EPSG:4326)<br>
-		<input type="text" id="glange"><br>
+		<input type="float" id="gl"><br>
 		POI-Beschreibung<br>
-		<input type="text" id="beschreibung"><br>
+		<input type="text" id="beschr"><br>
 
-		<input type="submit" value="submit">
+		<input type="submit" value="Submit" onclick=testf()>
+		<p id="Ausgabe"></p>
+
 	</form>
 </div>
 
 
-
+<input type="submit" value="Submit" onclick=test2()>
+<p id="input"></p>
 
 
 </body>
-
-
 </html>
