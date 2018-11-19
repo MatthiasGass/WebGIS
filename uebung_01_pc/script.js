@@ -1,6 +1,11 @@
 // test
 function myFunction() {
-    document.getElementById("demo").innerHTML = "Paragraph changed!";
     document.getElementById("test").innerHTML = "123";
-    document.getElementById("test2").innerHTML = "1abc";
+}
+
+
+function neu() {
+  let gj_alt = document.getElementById("Ausgabe2").value;
+  alert(gj_alt);
+
 }
