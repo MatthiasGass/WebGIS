@@ -1,36 +1,69 @@
 
 body{
-	background-image: url("image_02.jpg");
+	background-image: url("nz.jpg");
 	background-size: cover; /* alt: cover */
 	text-align: center;
 	background-attachment: fixed;
-    }
+}
 
-h1 {
-	font-family: sans-serif;
+h1{
+	font-family: helvetica;
 	font-size: 36pt;
-	color: darkblue;
 	margin-top: 5pt;
-	margin-bottom: 20pt;
-	}
+	margin-bottom: 5pt;
+	color: rgba(0,0,10);
+}
 
+p{
+	font-family: helvetica;
+	font-size: 11pt;
+	font-weight: bold;
+	color: rgba(0,0,10);
+}
+
+label{
+	font-family: helvetica;
+	font-size: 10pt;
+	font-weight: bold;
+	color: rgba(0,20,70);
+}
 
 input {
-
+	font-family: helvetica;
+	font-size: 10pt;
+	box-sizing: border-box;
+	border: 1px solid gray;
+	color: rgba(0,0,100);
+	margin-bottom: 7pt;
+	border-radius: 2px;
 }
 
-div.relative {
-    position: relative;
-		top: 50%;
-  	left: 50%;
-		/*https://stackoverflow.com/questions/953918/how-to-align-a-div-to-the-middle-horizontally-width-of-the-page*/
+
+input:focus {
+  border: 2px solid darkblue;
 }
 
+textarea{
+	box-sizing: border-box;
+	border: 1px solid gray;
+}
 
-div {
-	text-align: center;
-	width: intrinsic;           /* Safari/WebKit uses a non-standard name */
-  width: -moz-max-content;    /* Firefox/Gecko */
-  width: -webkit-max-content; /* Chrome */
-	background-color: lightgrey;
+textarea:focus {
+  border: 2px solid darkblue;
+}
+
+.divsub{
+	border: 1px dotted darkblue;
+	padding: 10px;
+	margin-top: 15pt;
+	margin-bottom: 15pt;
+	background:rgba(255,255,255,0.7);
+}
+
+.divmaster{
+	border: 2px solid black;
+	padding: 25px;
+	background:rgba(255,255,255,0.7);
+	border-radius: 8px;
+	display: inline-block;
 }

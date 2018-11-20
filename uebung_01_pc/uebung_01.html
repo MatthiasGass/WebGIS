@@ -5,38 +5,45 @@
 <head>
 	<meta http-equiv="content-type" content="text/html; charset=utf-8">
 	<title>Übung 01</title>
-	<link rel="stylesheet" type="text/css" href="styles.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
 	<script language="javascript" type="text/javascript" src="java.js"></script>
 </head>
 
 
 <body>
-	<h1>Heading</h1>
-	<p>Paragraph</p>
+	<h1>Exercise 1</h1>
+	<p>von Matthias Gassilloud</p>
 
+<div class="divmaster">
+	<p>Please enter values to create a geojson:</p>
+	<div class="divsub">
+		<form>
+			<label>POI-Name</label><br>
+			<input type="text" id="name"><br>
+			<label>POI-Typ</label><br>
+			<input type="text" id="typ"><br>
+			<label>Geogr. Breite (WGS84, EPSG:4326)</label><br>
+			<input type="float" id="gb"></label><br>
+			<label>Geogr. Länge (WGS84, EPSG:4326)</label><br>
+			<input type="float" id="gl"><br>
+			<label>POI-Beschreibung</label><br>
+			<input type="text" id="beschr"><br>
+		</form>
+		<input type="submit" value="Create geoJson" onclick="func1()"><br>
+	</div>
 
-<div class="relative">
-	<form>
-		POI-Name<br>
-		<input type="text" id="name"><br>
-		POI-Typ<br>
-		<input type="text" id="typ"><br>
-		Geogr. Breite (WGS84, EPSG:4326)<br>
-		<input type="float" id="gb"><br>
-		Geogr. Länge (WGS84, EPSG:4326)<br>
-		<input type="float" id="gl"><br>
-		POI-Beschreibung<br>
-		<input type="text" id="beschr"><br>
-	</form>
+	<div class="divsub">
+		<label>New GeoJSON (WGS84, EPSG:4326)</label><br>
+		<textarea id="Ausgabe_wgs"></textarea><br>
+	</div>
 
-	<input type="submit" value="Submit" onclick="testf()"><br>
-	<textarea id="Ausgabe"></textarea><br>
-
-	<input type="submit" value="projizieren" onclick="neu()"><br>
+	<div class="divsub">
+		<label>UMPROJEKTION WGS84 nach WEBMercator</label><br>
+		<input type="submit" value="Umprojektion" onclick="func2()"><br>
+		<textarea id="Ausgabe_wm"></textarea><br>
+	</div>
 
 </div>
-
-
 
 </body>
 </html>
